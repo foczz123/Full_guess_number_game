@@ -94,7 +94,7 @@ class HomePage extends StatelessWidget {
                           primary: Colors.white, backgroundColor: Colors.blue),
                       onPressed: () {
                         var input = _controller.text;
-                        var guess = int.tryParse(input!);
+                        var guess = int.tryParse(input);
                         if (guess == null) {
                           showDialog(
                               context: context,
